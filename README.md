@@ -7,7 +7,7 @@
 pip install -r requirements.txt
 ```
 
-## Developing
+## Writing content
 
 Place your article in the `content/` folder with the following format at the top:
 
@@ -41,4 +41,10 @@ View it in the browser!
 
 ```
 open output/index.html
+```
+
+## Publishing
+
+```
+make github
 ```
