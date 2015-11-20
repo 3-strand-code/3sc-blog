@@ -137,12 +137,35 @@ justice! You'll have to come to the meet-ups to get the full effect.</p>
 <p>What makes a neuron <cont>
  - connected through axons
  - fires with threshold</p>
-<p><img src="https://unsplash.it/"></p>
+<p><img src="https://unsplash.it/700/300?image=0"></p>
 <p>How is it similar to the brain <cont></p>
 <p>First we started by making an individual neuron and</p>
 <p>Connections, weights <cont></p>
 <p>Activation functions</p>
-<h1>Behold, the code!</h1>
+<h3>Bonus! Python tests</h3>
+<p>In Python a test is a function with some kind of assertion. The assertion is
+a condition that evaluates to a boolean, the most simple example might be:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">test_add_one_plus_one_equals_two</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
+</pre></div>
+
+
+<p>We can use tests to help maintain our code and get rid of unforeseen bugs. <cont></p>
+<p>Here's an actual test from my <a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py">neuron example</a>:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">test_connection_adds_to_incoming_and_outgoing_arrays</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">neuron</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">neuron_2</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">()</span>
+    <span class="n">neuron</span><span class="o">.</span><span class="n">connect_child</span><span class="p">(</span><span class="n">neuron_2</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c"># Let&#39;s make sure that there&#39;s at least one connection from our neuron to the next neuron</span>
+    <span class="k">assert</span> <span class="nb">any</span><span class="p">(</span><span class="n">neuron</span> <span class="o">==</span> <span class="n">connection</span><span class="o">.</span><span class="n">neuron</span> <span class="k">for</span> <span class="n">connection</span> <span class="ow">in</span> <span class="n">neuron_2</span><span class="o">.</span><span class="n">incoming_neurons</span><span class="p">)</span>
+
+    <span class="c"># And the same goes for the other neuron, make sure it&#39;s connected to us</span>
+    <span class="k">assert</span> <span class="nb">any</span><span class="p">(</span><span class="n">neuron_2</span> <span class="o">==</span> <span class="n">connection</span><span class="o">.</span><span class="n">neuron</span> <span class="k">for</span> <span class="n">connection</span> <span class="ow">in</span> <span class="n">neuron</span><span class="o">.</span><span class="n">outgoing_neurons</span><span class="p">)</span>
+</pre></div>
+
+
+<h3>Example neurons</h3>
 <ul>
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/elixir/neuron.exs">elixir</a></li>
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js">javascript ES5</a></li>
