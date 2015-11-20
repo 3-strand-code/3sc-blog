@@ -6,7 +6,6 @@
 ```
 pip install -r requirements.txt
 npm install
-npm install -g gulp
 ```
 
 ## Writing content
