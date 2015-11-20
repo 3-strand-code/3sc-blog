@@ -19,6 +19,7 @@
     <link rel="dns-prefetch" href="//googleads.g.doubleclick.net"/>
     <link rel="dns-prefetch" href="//pagead2.googlesyndication.com"/>
     <link rel="dns-prefetch" href="//twemoji.maxcdn.com"/>
+    <link rel="manifest" href="{{ SITEURL }}/theme/images/manifest.json">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -27,8 +28,8 @@
     <meta name="msapplication-tooltip" content="{{ TAG_LINE }}"/>
     <meta name="msapplication-window" content="width=1024;height=768"/>
     <meta name="msapplication-task" content="name={{ SITENAME }};action-uri=http:{{ SITEURL }};icon-uri={{ SITEURL }}/theme/images/favicon.ico"/>
-    <meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png"/>
-    <meta name="msapplication-TileColor" content="#1F1F21"/>
+    <meta name="msapplication-TileImage" content="{{ SITEURL }}/theme/images/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#4186c4"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="pragma" content="cache">
@@ -150,6 +151,7 @@
 {% if FEED_RSS %}
     <link href="{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed">
 {% endif %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/images/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/theme/images/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png">
@@ -158,8 +160,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/android-icon-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-16x16.png" sizes="16x16">

@@ -8,6 +8,14 @@ pip install -r requirements.txt
 npm install
 ```
 
+## Get Started
+
+Start live-reloading the site as you're editing content
+
+```
+npm start
+```
+
 ## Writing content
 
 Place your article in the `content/` folder with the following format at the top:
@@ -31,12 +39,6 @@ More content
 
 >(more details on writing articles can be found [here](http://docs.getpelican.com/en/3.6.3/content.html))
 
-
-Start live-reloading the site as you're editing content
-
-```
-npm start
-```
 
 ## Publishing
 
