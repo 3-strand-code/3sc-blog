@@ -29,7 +29,7 @@ Article content
 More content
 ```
 
-<sub><sup>(more details on writing articles can be found [here](http://docs.getpelican.com/en/3.6.3/content.html))</sup></sub>
+>(more details on writing articles can be found [here](http://docs.getpelican.com/en/3.6.3/content.html))
 
 
 Start live-reloading the site as you're editing content
