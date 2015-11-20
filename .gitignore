@@ -28,4 +28,7 @@ node_modules
 
 # PyCharm/WebStorm
 .idea/
+*.pyc
 
+# Pelican
+output/
