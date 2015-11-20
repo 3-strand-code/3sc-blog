@@ -1,4 +1,4 @@
-3sc-blog
+[3sc-blog](blog.3strandcode.com)
 ========
 
 ## Install
