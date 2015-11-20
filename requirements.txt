@@ -1,3 +1,5 @@
 Markdown==2.6.4
 pelican==3.6.3
 ghp-import==0.4.1
+existence==0.2.6
+progressbar==2.3
