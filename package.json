@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "3 Strand Code blog.",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "make regenerate & cd output && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3-strand-code/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3-strand-code/blog/issues"
+  },
+  "homepage": "https://github.com/3-strand-code/blog#readme"
+}
