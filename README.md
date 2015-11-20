@@ -5,6 +5,7 @@
 
 ```
 pip install -r requirements.txt
+npm install
 ```
 
 ## Writing content
@@ -31,16 +32,10 @@ More content
 <sub><sup>(more details on writing articles can be found [here](http://docs.getpelican.com/en/3.6.3/content.html))</sup></sub>
 
 
-Start regenerating the site as you're editing content
+Start live-reloading the site as you're editing content
 
 ```
-make regenerate
-```
-
-View it in the browser!
-
-```
-open output/index.html
+npm start
 ```
 
 ## Publishing
