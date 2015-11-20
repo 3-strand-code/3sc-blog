@@ -120,6 +120,8 @@ cf_upload: publish
 github: publish
 	./node_modules/.bin/gulp
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	echo "blog.3strandcode.com" > CNAME
+	git add CNAME && git commit -m 'add cname'
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
