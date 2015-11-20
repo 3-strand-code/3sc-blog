@@ -1,22 +1,21 @@
 3sc-blog
 ========
 
-## Installing
+## Install
 
 ```
 pip install -r requirements.txt
 npm install
 ```
 
-## Get Started
-
-Start live-reloading the site as you're editing content
+## Start
 
 ```
 npm start
 ```
+>live reload included
 
-## Writing content
+## Write
 
 Place your article in the `content/` folder with the following format at the top:
 
@@ -40,7 +39,7 @@ More content
 >(more details on writing articles can be found [here](http://docs.getpelican.com/en/3.6.3/content.html))
 
 
-## Publishing
+## Publish
 
 ```
 make github
