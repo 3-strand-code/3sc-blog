@@ -4,7 +4,9 @@
   "description": "3 Strand Code blog.",
   "main": "index.js",
   "dependencies": {
-    "live-server": "^0.8.2"
+    "gulp": "^3.9.0",
+    "live-server": "^0.8.2",
+    "run-sequence": "^1.1.4"
   },
   "devDependencies": {},
   "scripts": {
