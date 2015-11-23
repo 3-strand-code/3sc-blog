@@ -10,8 +10,11 @@ Last month we did the first part of a many part series about creating Neural Net
 from the ground up. I'll briefly cover some of what Levi went over but I won't do it
 justice! You'll have to come to the meet-ups to get the full effect.
 
+Basically, neural networks can be used to take in some input and convert it to some outputs, like
+taking an image as input and outputting a caption for the image.
 
-The first session will cover the most basic piece of a neural network: the neuron. Full
+
+The first session coverered the most basic piece of a neural network: the neuron. Full
 neural networks consist of a few more parts, but they are all there to glue together
 the basic neuron.
 
@@ -31,15 +34,15 @@ Real neurons
 ![Neuron](images/neuron.png)
 
 
-First we started by making one neuron and activating it. Activation functions
-take some input and smooth it out. Normalizing our inputs from 0...1 makes it
+We started by making one neuron and activating it. Activation functions
+take some input and "smooth it out". Normalizing our inputs from 0...1 makes it
 easier to work with in the neural network.
 
 We ended up using the Rectifier activation function:
 
 ```1 / (1 + math.exp(-x))```
 
-After completing the activation function, then we connected the neurons to each
+After completing the activation function we connected the neurons to each
 other.
 
 
