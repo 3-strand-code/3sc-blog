@@ -47,6 +47,17 @@ other.
 
 
 
+### Example neuron code
+
+ * [elixir](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/elixir/neuron.exs)
+ * [javascript ES5](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js)
+ * [javascript ES7](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es7/Neuron.js)
+ * [ruby](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/ruby/karmen_neural_network.rb)
+ * [python](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections.py)
+ * [python tests](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py)
+
+Stay tuned for part 2 next month! We'll be layering and maybe even training our neurons!
+
 
 
 
@@ -89,14 +100,3 @@ def test_connection_adds_to_incoming_and_outgoing_arrays(self):
 
 If the above test passes, we can be sure our connection was made properly!
 
-
-### Example neuron code
-
- * [elixir](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/elixir/neuron.exs)
- * [javascript ES5](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js)
- * [javascript ES7](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es7/Neuron.js)
- * [ruby](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/ruby/karmen_neural_network.rb)
- * [python](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections.py)
- * [python tests](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py)
-
-Stay tuned for part 2 next month! We'll be layering and maybe even training our neurons!
