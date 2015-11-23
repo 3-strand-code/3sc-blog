@@ -187,8 +187,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta itemprop="primaryImageOfPage" content="{{ SITEURL }}/theme/images/logo.png">
     <meta itemprop="inLanguage" content="es">
     {% include 'navigation.html' %}
+
+    <style>
+        .main-header.post-head {
+
+{#            background-image: url("https://images.unsplash.com/photo-1429051883746-afd9d56fbdaf?fit=crop&fm=jpg&h=925&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1300") !important;#}
+
+            {% if article %}
+                background-image: url("https://images.unsplash.com/38/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg?fit=crop&fm=jpg&h=925&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1300") !important;
+            {% else %}
+                background-image: url("https://images.unsplash.com/20/bw-room.JPG?fit=crop&fm=jpg&h=925&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1300") !important;
+            {% endif %}
+            background-color: #6ea6be;
+            background-blend-mode: soft-light;
+        }
+    </style>
+
     <div class="site-wrapper">
-        <header class="main-header post-head" style="background-image: url({{ SITEURL }}/theme/images/{% if article %}bear.jpg{% else %}banner-bg.jpg{% endif %})" itemscope itemtype="http://schema.org/WPHeader">
+        <header class="main-header post-head" itemscope itemtype="http://schema.org/WPHeader">
             <nav class="main-nav overlay clearfix">
                 <a class="menu-button" href="#">
                     <span class="burger">&#9776;</span>
