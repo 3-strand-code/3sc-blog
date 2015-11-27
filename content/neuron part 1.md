@@ -18,7 +18,7 @@ The first session coverered the most basic piece of a neural network: the neuron
 neural networks consist of a few more parts, but they are all there to glue together
 the basic neuron.
 
-Neurons in artifical neural networks
+Neurons in artificial neural networks
 
  - connections to other neurons via memory pointers
  - fires when connections meet some threshold number
@@ -64,7 +64,7 @@ Stay tuned for part 2 next month! We'll be layering and maybe even training our 
 ### Bonus: Python tests
 
 In Python a tests are many functions run one after the other checking a suite of software for errors.
-These functions have simple assertions in them gauranteeing the behavior of a piece of code.
+These functions have simple assertions in them guaranteeing the behavior of a piece of code.
 If the assertion fails, the test fails.
 
 The assertion is a condition that evaluates to a boolean, like "assert that when I add 1 + 1 I get the result 2."
