@@ -101,8 +101,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </ul>
     <a class="subscribe-button icon-feed" href='http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Ffeeds.feedburner.com%2FElBlogDeAbr4xas'  target='blank'>Subscribe</a>
 </nav>
-<span class="nav-cover"></span>    <div class="site-wrapper">
-        <header class="main-header post-head" style="background-image: url(http://3-strand-code.github.io/3sc-blog/theme/images/bear.jpg)" itemscope itemtype="http://schema.org/WPHeader">
+<span class="nav-cover"></span>
+    <style>
+        .main-header.post-head {
+
+
+                background-image: url("https://images.unsplash.com/38/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg?fit=crop&fm=jpg&h=925&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1300") !important;
+            background-color: #6ea6be;
+            background-blend-mode: soft-light;
+        }
+    </style>
+
+    <div class="site-wrapper">
+        <header class="main-header post-head" itemscope itemtype="http://schema.org/WPHeader">
             <nav class="main-nav overlay clearfix">
                 <a class="menu-button" href="#">
                     <span class="burger">&#9776;</span>
@@ -133,42 +144,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </header>
         <section class="post-content">
             <p>Last month we did the first part of a many part series about creating Neural Networks
-from the ground up. I'll briefly cover some of what Levi went over but I won't do it
-justice! You'll have to come to the meet-ups to get the full effect.</p>
-<p>What makes a neuron <cont>
- - connected through axons
- - fires with threshold</p>
-<p><img src="https://unsplash.it/700/300?image=0"></p>
-<p>How is it similar to the brain <cont></p>
-<p>First we started by making an individual neuron and</p>
-<p>Connections, weights <cont></p>
-<p>Activation functions</p>
-<h3>Bonus! Python tests</h3>
-<p>In Python a test is a function with some kind of assertion. The assertion is
-a condition that evaluates to a boolean, the most simple example might be:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">test_add_one_plus_one_equals_two</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
+from the ground up.  See it on <a href="https://github.com/dev-coop/neural-net-hacking-examples">GitHub</a>.
+I'll briefly cover some of what Levi went over but I won't do it justice! 
+You'll have to come to the meet-ups to get the full effect.</p>
+<p>Basically, neural networks can be used to take in some input and produce some desired output.
+Like, taking an image as input and <a href="http://www.digitaltrends.com/computing/realtime-neural-network-amsterdam/">outputting a caption</a> for the image.</p>
+<p>The first session covered the most basic piece of a neural network: the neuron. Full
+neural networks consist of a few more parts, but they are all there to glue together
+the basic neuron.</p>
+<h3>Neuron Model</h3>
+<ul>
+<li>takes any number of inputs</li>
+<li>each input has a connection weight multiplier</li>
+<li>input values are multiplied by their connection weight and summed</li>
+<li>the multiplied sum total is passed through an activation function to produce the output</li>
+</ul>
+<p><img alt="Neuron Model" src="images/neuron-model.png" /></p>
+<p><sup><a href="https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Activation_Functions">Source: WikiBooks</a></sup></p>
+<h3>Artificial Neurons</h3>
+<ul>
+<li>connections to other neurons via memory pointers</li>
+<li>fires by calling a method on the Neuron object</li>
+<li>digital</li>
+</ul>
+<h3>Real Neurons</h3>
+<ul>
+<li>branching dendrites to receive chemical signals</li>
+<li>axon projection to conduct a nerve signal</li>
+<li>analog</li>
+</ul>
+<p><img alt="Neuron" src="images/neuron.png" /></p>
+<p>We started by making one neuron and activating it. Activation functions
+introduce non-linearity into the network, we'll why that is important when we get to training.
+Normalizing our inputs from 0...1 (the range of our activation function) makes it more effective.</p>
+<p>We ended up using the <a href="http://www.wikiwand.com/en/Sigmoid_function">Sigmoid</a> activation function:</p>
+<div class="highlight"><pre><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="nx">math</span><span class="p">.</span><span class="nx">exp</span><span class="p">(</span><span class="o">-</span><span class="nx">x</span><span class="p">))</span>
 </pre></div>
 
 
-<p>We can use tests to help maintain our code and get rid of unforeseen bugs. <cont></p>
-<p>Here's an actual test from my <a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py">neuron example</a>:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">test_connection_adds_to_incoming_and_outgoing_arrays</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="c"># Setup our neurons and connections</span>
-    <span class="n">neuron</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">neuron_2</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">()</span>
-    <span class="n">neuron</span><span class="o">.</span><span class="n">connect_child</span><span class="p">(</span><span class="n">neuron_2</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-
-    <span class="c"># Let&#39;s make sure that there&#39;s at least one connection from our neuron to the next neuron</span>
-    <span class="k">assert</span> <span class="nb">any</span><span class="p">(</span><span class="n">neuron</span> <span class="o">==</span> <span class="n">connection</span><span class="o">.</span><span class="n">neuron</span> <span class="k">for</span> <span class="n">connection</span> <span class="ow">in</span> <span class="n">neuron_2</span><span class="o">.</span><span class="n">incoming_neurons</span><span class="p">)</span>
-
-    <span class="c"># And the same goes for the other neuron, make sure it&#39;s connected to us</span>
-    <span class="k">assert</span> <span class="nb">any</span><span class="p">(</span><span class="n">neuron_2</span> <span class="o">==</span> <span class="n">connection</span><span class="o">.</span><span class="n">neuron</span> <span class="k">for</span> <span class="n">connection</span> <span class="ow">in</span> <span class="n">neuron</span><span class="o">.</span><span class="n">outgoing_neurons</span><span class="p">)</span>
-</pre></div>
-
-
-<p>If the above test passes, we can be sure our connections were made properly.</p>
-<h3>Example neurons</h3>
+<p>After completing the activation function we connected the neurons to each other.</p>
+<h3>Example neuron code</h3>
 <ul>
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/elixir/neuron.exs">elixir</a></li>
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js">javascript ES5</a></li>
@@ -178,6 +193,38 @@ a condition that evaluates to a boolean, the most simple example might be:</p>
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py">python tests</a></li>
 </ul>
 <p>Stay tuned for part 2 next month! We'll be layering and maybe even training our neurons!</p>
+<h3>Bonus: Python tests</h3>
+<p>In Python a tests are many functions run one after the other checking a suite of software for errors.
+These functions have simple assertions in them guaranteeing the behavior of a piece of code.
+If the assertion fails, the test fails.</p>
+<p>The assertion is a condition that evaluates to a boolean, like "assert that when I add 1 + 1 I get the result 2."</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">test_add_one_plus_one_equals_two</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">2</span>
+</pre></div>
+
+
+<p>We can use tests to help maintain our code and get rid of unforeseen bugs. For example, if you
+are working on a website with 10,000 lines of code... how can you be sure when you touch <em>this thing over here</em>
+it doesn't break <em>that thing over there</em>? Well! You write about twice as much code making sure the original
+code does what it's supposed to by asserting exactly how it should behave.</p>
+<p><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py">Here's</a> a test from the Python example:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">test_connection_adds_to_incoming_and_outgoing_arrays</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c"># Setup our neurons and connections</span>
+    <span class="n">neuron</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">neuron_2</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">()</span>
+    <span class="n">neuron</span><span class="o">.</span><span class="n">connect_child</span><span class="p">(</span><span class="n">neuron_2</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c"># Let&#39;s make sure that there&#39;s at least one connection</span>
+    <span class="c"># from our neuron to the next neuron</span>
+    <span class="k">assert</span> <span class="p">[</span><span class="n">neuron</span> <span class="o">==</span> <span class="n">connection</span><span class="o">.</span><span class="n">neuron</span> <span class="k">for</span> <span class="n">connection</span> <span class="ow">in</span> <span class="n">neuron_2</span><span class="o">.</span><span class="n">incoming_neurons</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+    <span class="c"># And the same goes for the other neuron, make sure</span>
+    <span class="c"># it&#39;s connected to us</span>
+    <span class="k">assert</span> <span class="p">[</span><span class="n">neuron_2</span> <span class="o">==</span> <span class="n">connection</span><span class="o">.</span><span class="n">neuron</span> <span class="k">for</span> <span class="n">connection</span> <span class="ow">in</span> <span class="n">neuron</span><span class="o">.</span><span class="n">outgoing_neurons</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+
+
+<p>If the above test passes, we can be sure our connection was made properly!</p>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7127443823639155" data-ad-slot="9038513565" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>            <br/>
 <nav class="pagination" role="navigation">
     <ul>
