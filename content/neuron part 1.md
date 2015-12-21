@@ -24,7 +24,7 @@ the basic neuron.
 - input values are multiplied by their connection weight and summed
 - the multiplied sum total is passed through an activation function to produce the output
  
-![Neuron Model](images/neuron-model.png)
+![Neuron Model](/images/neuron-model.png)
 
 <sup>[Source: WikiBooks](https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Activation_Functions)</sup>
 
@@ -41,7 +41,7 @@ the basic neuron.
  - axon projection to conduct a nerve signal
  - analog
 
-![Neuron](images/neuron.png)
+![Neuron](/images/neuron.png)
 
 We started by making one neuron and activating it. Activation functions
 introduce non-linearity into the network, we'll why that is important when we get to training.
@@ -61,8 +61,8 @@ After completing the activation function we connected the neurons to each other.
  * [javascript ES5](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js)
  * [javascript ES7](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es7/Neuron.js)
  * [ruby](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/ruby/karmen_neural_network.rb)
- * [python](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections.py)
- * [python tests](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py)
+ * [python](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections.py)
+ * [python tests](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py)
 
 Stay tuned for part 2 next month! We'll be layering and maybe even training our neurons!
 
@@ -84,7 +84,7 @@ are working on a website with 10,000 lines of code... how can you be sure when y
 it doesn't break *that thing over there*? Well! You write about twice as much code making sure the original
 code does what it's supposed to by asserting exactly how it should behave.
 
-[Here's](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py) a test from the Python example:
+[Here's](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py) a test from the Python example:
 
 ```python
 def test_connection_adds_to_incoming_and_outgoing_arrays(self):
@@ -104,3 +104,5 @@ def test_connection_adds_to_incoming_and_outgoing_arrays(self):
 
 If the above test passes, we can be sure our connection was made properly!
 
+
+Here's a link to [part 2 in this series](neural-networks-part-2-the-network.html)

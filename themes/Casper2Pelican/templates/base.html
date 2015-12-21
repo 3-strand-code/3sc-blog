@@ -201,6 +201,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background-color: #6ea6be;
             background-blend-mode: soft-light;
         }
+
+        .main-header-content.inner a {
+            text-decoration: initial;
+        }
     </style>
 
     <div class="site-wrapper">
@@ -213,7 +217,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </nav>
             <div class="vertical">
                 <div class="main-header-content inner">
-                    <h1 class="page-title" itemprop="headline">{{ SITENAME }}</h1>
+                    <a href="{{ SITEURL }}">
+                        <h1 class="page-title" itemprop="headline">{{ SITENAME }}</h1>
+                    </a>
                     <h2 class="page-description" itemprop="description">{{TAG_LINE}}</h2>
                 </div>
             </div>
