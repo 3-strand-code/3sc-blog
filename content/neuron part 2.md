@@ -11,12 +11,12 @@ had part 2 of learning neural networks. We talked projects, ate pizza, and had a
 
 ### Layers and networks
 
-This week (Levi Thomason)[http://levithomason.com] went over his next lesson on neural networks. We made layers,
+This week [Levi Thomason](http://levithomason.com) went over his next lesson on neural networks. We made layers,
 connected them to each other, and then connected them all together in a network.
 
 ![Neuron graph](/images/events/neuron_pt2_graph_tree.jpg)
 
-Also, in preparation for this meet up [Jason Rutherford](https://github.com/jason-rutherford) made an awesome [Ruby implementation](https://github.com/jason-rutherford/neural-network) of his neural network
+In preparation for this meet up [Jason Rutherford](https://github.com/jason-rutherford) made an awesome [Ruby implementation](https://github.com/jason-rutherford/neural-network) of his neural network
 including tests an award winning readme! :)
 
 ![Lookin' good boys!](/images/events/neuron_pt2_lookin_good_boys.jpg)
