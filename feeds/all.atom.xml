@@ -15,7 +15,7 @@ the basic neuron.&lt;/p&gt;
 &lt;li&gt;input values are multiplied by their connection weight and summed&lt;/li&gt;
 &lt;li&gt;the multiplied sum total is passed through an activation function to produce the output&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Neuron Model" src="images/neuron-model.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Neuron Model" src="/images/neuron-model.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;sup&gt;&lt;a href="https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Activation_Functions"&gt;Source: WikiBooks&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;h3&gt;Artificial Neurons&lt;/h3&gt;
 &lt;ul&gt;
@@ -29,7 +29,7 @@ the basic neuron.&lt;/p&gt;
 &lt;li&gt;axon projection to conduct a nerve signal&lt;/li&gt;
 &lt;li&gt;analog&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Neuron" src="images/neuron.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Neuron" src="/images/neuron.png" /&gt;&lt;/p&gt;
 &lt;p&gt;We started by making one neuron and activating it. Activation functions
 introduce non-linearity into the network, we'll why that is important when we get to training.
 Normalizing our inputs from 0...1 (the range of our activation function) makes it more effective.&lt;/p&gt;
@@ -45,8 +45,8 @@ Normalizing our inputs from 0...1 (the range of our activation function) makes i
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js"&gt;javascript ES5&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es7/Neuron.js"&gt;javascript ES7&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/ruby/karmen_neural_network.rb"&gt;ruby&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections.py"&gt;python&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py"&gt;python tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections.py"&gt;python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py"&gt;python tests&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Stay tuned for part 2 next month! We'll be layering and maybe even training our neurons!&lt;/p&gt;
 &lt;h3&gt;Bonus: Python tests&lt;/h3&gt;
@@ -63,7 +63,7 @@ If the assertion fails, the test fails.&lt;/p&gt;
 are working on a website with 10,000 lines of code... how can you be sure when you touch &lt;em&gt;this thing over here&lt;/em&gt;
 it doesn't break &lt;em&gt;that thing over there&lt;/em&gt;? Well! You write about twice as much code making sure the original
 code does what it's supposed to by asserting exactly how it should behave.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py"&gt;Here's&lt;/a&gt; a test from the Python example:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py"&gt;Here's&lt;/a&gt; a test from the Python example:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_connection_adds_to_incoming_and_outgoing_arrays&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="c"&gt;# Setup our neurons and connections&lt;/span&gt;
     &lt;span class="n"&gt;neuron&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Neuron&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -80,4 +80,5 @@ code does what it's supposed to by asserting exactly how it should behave.&lt;/p
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;If the above test passes, we can be sure our connection was made properly!&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry></feed>
+&lt;p&gt;If the above test passes, we can be sure our connection was made properly!&lt;/p&gt;
+&lt;p&gt;Here's a link to &lt;a href="neural-networks-part-2-the-network.html"&gt;part 2 in this series&lt;/a&gt;&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry></feed>

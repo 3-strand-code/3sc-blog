@@ -110,6 +110,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             background-color: #6ea6be;
             background-blend-mode: soft-light;
         }
+
+        .main-header-content.inner a {
+            text-decoration: initial;
+        }
     </style>
 
     <div class="site-wrapper">
@@ -122,7 +126,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </nav>
             <div class="vertical">
                 <div class="main-header-content inner">
-                    <h1 class="page-title" itemprop="headline">3 Strand Code Blog</h1>
+                    <a href="http://3-strand-code.github.io/3sc-blog">
+                        <h1 class="page-title" itemprop="headline">3 Strand Code Blog</h1>
+                    </a>
                     <h2 class="page-description" itemprop="description"></h2>
                 </div>
             </div>
@@ -138,9 +144,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="entry-author" itemscope="" itemtype="http://schema.org/Person" itemprop="author">
                     <span itemprop="name">Eric Carmichael</span></span>
                 <time class="post-date" itemprop="datePublished" datetime="2015YYY-20M-%DD">Friday, November 20, 2015</time>
-<nav role="navigation">
-    <a class="newer-posts blink_me" href="http://3-strand-code.github.io/3sc-blog">&larr; Back</a>
-</nav><br/>            </section>
+
+            </section>
         </header>
         <section class="post-content">
             <p>Last month we did the first part of a many part series about creating Neural Networks
@@ -159,7 +164,7 @@ the basic neuron.</p>
 <li>input values are multiplied by their connection weight and summed</li>
 <li>the multiplied sum total is passed through an activation function to produce the output</li>
 </ul>
-<p><img alt="Neuron Model" src="images/neuron-model.png" /></p>
+<p><img alt="Neuron Model" src="/images/neuron-model.png" /></p>
 <p><sup><a href="https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Activation_Functions">Source: WikiBooks</a></sup></p>
 <h3>Artificial Neurons</h3>
 <ul>
@@ -173,7 +178,7 @@ the basic neuron.</p>
 <li>axon projection to conduct a nerve signal</li>
 <li>analog</li>
 </ul>
-<p><img alt="Neuron" src="images/neuron.png" /></p>
+<p><img alt="Neuron" src="/images/neuron.png" /></p>
 <p>We started by making one neuron and activating it. Activation functions
 introduce non-linearity into the network, we'll why that is important when we get to training.
 Normalizing our inputs from 0...1 (the range of our activation function) makes it more effective.</p>
@@ -189,8 +194,8 @@ Normalizing our inputs from 0...1 (the range of our activation function) makes i
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js">javascript ES5</a></li>
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es7/Neuron.js">javascript ES7</a></li>
 <li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/ruby/karmen_neural_network.rb">ruby</a></li>
-<li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections.py">python</a></li>
-<li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py">python tests</a></li>
+<li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections.py">python</a></li>
+<li><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py">python tests</a></li>
 </ul>
 <p>Stay tuned for part 2 next month! We'll be layering and maybe even training our neurons!</p>
 <h3>Bonus: Python tests</h3>
@@ -207,7 +212,7 @@ If the assertion fails, the test fails.</p>
 are working on a website with 10,000 lines of code... how can you be sure when you touch <em>this thing over here</em>
 it doesn't break <em>that thing over there</em>? Well! You write about twice as much code making sure the original
 code does what it's supposed to by asserting exactly how it should behave.</p>
-<p><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/neural_network_with_connections_tests.py">Here's</a> a test from the Python example:</p>
+<p><a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py">Here's</a> a test from the Python example:</p>
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">test_connection_adds_to_incoming_and_outgoing_arrays</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="c"># Setup our neurons and connections</span>
     <span class="n">neuron</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -225,6 +230,7 @@ code does what it's supposed to by asserting exactly how it should behave.</p>
 
 
 <p>If the above test passes, we can be sure our connection was made properly!</p>
+<p>Here's a link to <a href="neural-networks-part-2-the-network.html">part 2 in this series</a></p>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7127443823639155" data-ad-slot="9038513565" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>            <br/>
 <nav class="pagination" role="navigation">
     <ul>
