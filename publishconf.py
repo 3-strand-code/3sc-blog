@@ -10,6 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+TIMEZONE = 'US/Pacific'
 SITEURL = 'http://blog.3strandcode.com'
 RELATIVE_URLS = False
 
