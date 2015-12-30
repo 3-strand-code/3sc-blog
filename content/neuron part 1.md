@@ -60,7 +60,7 @@ After completing the activation function we connected the neurons to each other.
  * [elixir](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/elixir/neuron.exs)
  * [javascript ES5](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js)
  * [javascript ES7](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es7/Neuron.js)
- * [ruby](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/ruby/karmen_neural_network.rb)
+ * [ruby](https://github.com/kblake/neural-network)
  * [python](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections.py)
  * [python tests](https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py)
 
