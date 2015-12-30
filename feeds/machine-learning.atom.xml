@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>3 Strand Code Blog</title><link href="http://3-strand-code.github.io/3sc-blog/" rel="alternate"></link><link href="http://3-strand-code.github.io/3sc-blog/feeds/machine-learning.atom.xml" rel="self"></link><id>http://3-strand-code.github.io/3sc-blog/</id><updated>2015-11-20T10:20:00-08:00</updated><entry><title>Neural Networks Part 1: The Neuron</title><link href="http://3-strand-code.github.io/3sc-blog/neural-networks-part-1-the-neuron.html" rel="alternate"></link><updated>2015-11-20T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:3-strand-code.github.io,2015-11-20:3sc-blog/neural-networks-part-1-the-neuron.html</id><summary type="html">&lt;p&gt;Last month we did the first part of a many part series about creating Neural Networks
+<feed xmlns="http://www.w3.org/2005/Atom"><title>3 Strand Code Blog</title><link href="http://3-strand-code.github.io/3sc-blog/" rel="alternate"></link><link href="http://3-strand-code.github.io/3sc-blog/feeds/machine-learning.atom.xml" rel="self"></link><id>http://3-strand-code.github.io/3sc-blog/</id><updated>2015-12-16T10:20:00-08:00</updated><entry><title>Neural Networks Part 2: The Network</title><link href="http://3-strand-code.github.io/3sc-blog/neural-networks-part-2-the-network.html" rel="alternate"></link><updated>2015-12-16T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:3-strand-code.github.io,2015-12-16:3sc-blog/neural-networks-part-2-the-network.html</id><summary type="html">&lt;p&gt;Every month we participate in the &lt;a href="http://meetup.com/dev-coop/"&gt;Developer Co-op&lt;/a&gt; meetup in Liberty Lake, Washington. This month we
+had part 2 of learning neural networks. We talked projects, ate pizza, and had a great time!&lt;/p&gt;
+&lt;h3&gt;Layers and networks&lt;/h3&gt;
+&lt;p&gt;This week &lt;a href="https://www.linkedin.com/in/levithomason"&gt;Levi Thomason&lt;/a&gt; went over his next lesson on neural networks. We made layers,
+connected them to each other, and then connected them all together in a network.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Neuron graph" src="/images/events/neuron_pt2_graph_tree.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;In preparation for this meet up &lt;a href="https://github.com/jason-rutherford"&gt;Jason Rutherford&lt;/a&gt; made an awesome &lt;a href="https://github.com/jason-rutherford/neural-network"&gt;Ruby implementation&lt;/a&gt; of his neural network
+including tests an award winning readme! :)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Lookin' good boys!" src="/images/events/neuron_pt2_lookin_good_boys.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Lookin good boys! &lt;/p&gt;
+&lt;h3&gt;What's next&lt;/h3&gt;
+&lt;p&gt;We'll enable our networks to be trained to output desired values based on some input.&lt;/p&gt;
+&lt;p&gt;Here's a link to &lt;a href="neural-networks-part-1-the-neuron.html"&gt;part 1 in this series&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And here's a link to the &lt;a href="asdf"&gt;next part in the series&lt;/a&gt;&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry><entry><title>Neural Networks Part 1: The Neuron</title><link href="http://3-strand-code.github.io/3sc-blog/neural-networks-part-1-the-neuron.html" rel="alternate"></link><updated>2015-11-20T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:3-strand-code.github.io,2015-11-20:3sc-blog/neural-networks-part-1-the-neuron.html</id><summary type="html">&lt;p&gt;Last month we did the first part of a many part series about creating Neural Networks
 from the ground up.  See it on &lt;a href="https://github.com/dev-coop/neural-net-hacking-examples"&gt;GitHub&lt;/a&gt;.
 I'll briefly cover some of what Levi went over but I won't do it justice! 
 You'll have to come to the meet-ups to get the full effect.&lt;/p&gt;
@@ -44,7 +57,7 @@ Normalizing our inputs from 0...1 (the range of our activation function) makes i
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/elixir/neuron.exs"&gt;elixir&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es5/neuronet.js"&gt;javascript ES5&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/es7/Neuron.js"&gt;javascript ES7&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/ruby/karmen_neural_network.rb"&gt;ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kblake/neural-network"&gt;ruby&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections.py"&gt;python&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dev-coop/neural-net-hacking-examples/blob/master/python/Part%201/neural_network_with_connections_tests.py"&gt;python tests&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
