@@ -30,4 +30,4 @@ We'll enable our networks to be trained to output desired values based on some i
 
 Here's a link to [part 1 in this series](neural-networks-part-1-the-neuron.html)
 
-And here's a link to the [next part in the series](asdf)
+<!--And here's a link to the [next part in the series](asdf)-->
