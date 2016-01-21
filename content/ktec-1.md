@@ -13,7 +13,7 @@ little presentation about our lives (far from perfect), how we got here (success
 achieve the same ends ([3 Strand Code!](http://3strandcode.com)).
 
 We first met ktec's computer hardware instructor, [Jason Green](http://ktectraining.org/jason-green.html) a couple
-months ago.  He was very open and excited about what we're offering, high tech job traingin and placement.
+months ago.  He was very open and excited about what we're offering, high tech job training and placement.
 He introduced us to his students and we were blown away by their response.
 We're super thankful to be collaborating with Jason and ktec.
 

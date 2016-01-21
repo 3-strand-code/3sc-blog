@@ -3,7 +3,7 @@ Date: 2015-12-24 10:20
 Category: machine learning
 Tags: neural networks, machine learning, coding
 Authors: Eric Carmichael
-Summary: Every month we participate in the [Developer Co-op](http://meetup.com/dev-coop/) meetup in Liberty Lake, Washington. This month we had part 2 of learning neural networks. We talked projects, ate pizza, and had a great time!
+Summary: Every month we participate in the [Developer Co-op](http://meetup.com/dev-coop/) meetup in Liberty Lake, Washington. This month we had part 3 of learning neural networks. We talked projects, ate pizza, and had a great time!
 Status: draft
 
 
