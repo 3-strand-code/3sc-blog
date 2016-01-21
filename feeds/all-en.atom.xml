@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="http://blog.3strandcode.com/" rel="alternate"></link><link href="http://blog.3strandcode.com/feeds/machine-learning.atom.xml" rel="self"></link><id>http://blog.3strandcode.com/</id><updated>2015-12-16T10:20:00-08:00</updated><entry><title>Neural Networks Part 2: The Network</title><link href="http://blog.3strandcode.com/neural-networks-part-2-the-network.html" rel="alternate"></link><updated>2015-12-16T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-12-16:neural-networks-part-2-the-network.html</id><summary type="html">&lt;p&gt;Every month we participate in the &lt;a href="http://meetup.com/dev-coop/"&gt;Developer Co-op&lt;/a&gt; meetup in Liberty Lake, Washington. This month we
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="http://blog.3strandcode.com/" rel="alternate"></link><link href="http://blog.3strandcode.com/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.3strandcode.com/</id><updated>2015-12-18T10:20:00-08:00</updated><entry><title>Presenting at K-Tec</title><link href="http://blog.3strandcode.com/presenting-at-k-tec.html" rel="alternate"></link><updated>2015-12-18T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-12-18:presenting-at-k-tec.html</id><summary type="html">&lt;p&gt;&lt;img alt="KTec" src="/images/events/ktec.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;A few weeks ago we went to &lt;a href="http://ktectraining.org/"&gt;ktec&lt;/a&gt;, an awesome technical school in Rathdrum, Idaho. We did a
+little presentation about our lives (far from perfect), how we got here (successful developers), and what we're doing to help others
+achieve the same ends (&lt;a href="http://3strandcode.com"&gt;3 Strand Code!&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;We first met ktec's computer hardware instructor, &lt;a href="http://ktectraining.org/jason-green.html"&gt;Jason Green&lt;/a&gt; a couple
+months ago.  He was very open and excited about what we're offering, high tech job training and placement.
+He introduced us to his students and we were blown away by their response.
+We're super thankful to be collaborating with Jason and ktec.&lt;/p&gt;
+&lt;p&gt;We heard comments like: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[3 Strand Code] is exactly what I'm looking for... it's like you guys are giving me everything on
+a turkey platter!&lt;/p&gt;
+&lt;p&gt;&amp;mdash; Thai&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Game hacking&lt;/h3&gt;
+&lt;p&gt;&lt;img src="/images/events/age_of_empires.png" alt="KTec" style="float: left; left: 0; transform: none; margin: 1em;" width="300"&gt;&lt;/p&gt;
+&lt;p&gt;Last week Jason and I did some &lt;a href="http://autoitscript.com"&gt;AutoIt&lt;/a&gt; experiments using the aging classic 
+&lt;a href="http://www.ageofempires.com/"&gt;Age of Empires II&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Jason got AutoIt to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Iterate through his barracks to build as many spearmen as possible&lt;/li&gt;
+&lt;li&gt;Send one unit to explore whole map using a waypoint system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Meanwhile many students were exploring HTML and the &lt;a href="http://getbootstrap.com"&gt;Bootstrap&lt;/a&gt; framework. A few other students were
+doing some advanced work with 3d modeling and unity.&lt;/p&gt;
+&lt;p&gt;Rock on Ktec, we hope to be back soon!&lt;/p&gt;</summary><category term="presenting"></category><category term="community"></category><category term="coding"></category></entry><entry><title>Neural Networks Part 2: The Network</title><link href="http://blog.3strandcode.com/neural-networks-part-2-the-network.html" rel="alternate"></link><updated>2015-12-16T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-12-16:neural-networks-part-2-the-network.html</id><summary type="html">&lt;p&gt;Every month we participate in the &lt;a href="http://meetup.com/dev-coop/"&gt;Developer Co-op&lt;/a&gt; meetup in Liberty Lake, Washington. This month we
 had part 2 of learning neural networks. We talked projects, ate pizza, and had a great time!&lt;/p&gt;
 &lt;h3&gt;Layers and networks&lt;/h3&gt;
 &lt;p&gt;This week &lt;a href="https://www.linkedin.com/in/levithomason"&gt;Levi Thomason&lt;/a&gt; went over his next lesson on neural networks. We made layers,
