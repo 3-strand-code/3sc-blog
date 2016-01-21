@@ -10,6 +10,9 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+# repeating theme here to make sure template doesn't get all wonky..
+THEME = 'themes/Casper2Pelican'
+
 TIMEZONE = 'US/Pacific'
 SITEURL = 'http://blog.3strandcode.com'
 RELATIVE_URLS = False
