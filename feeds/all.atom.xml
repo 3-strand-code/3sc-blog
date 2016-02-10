@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>3 Strand Code Blog</title><link href="http://blog.3strandcode.com/" rel="alternate"></link><link href="http://blog.3strandcode.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.3strandcode.com/</id><updated>2015-12-18T10:20:00-08:00</updated><entry><title>Presenting at K-Tec</title><link href="http://blog.3strandcode.com/presenting-at-k-tec.html" rel="alternate"></link><updated>2015-12-18T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-12-18:presenting-at-k-tec.html</id><summary type="html">&lt;p&gt;&lt;img alt="KTec" src="/images/events/ktec.jpg" /&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>3 Strand Code Blog</title><link href="http://blog.3strandcode.com/" rel="alternate"></link><link href="http://blog.3strandcode.com/feeds/all.atom.xml" rel="self"></link><id>http://blog.3strandcode.com/</id><updated>2016-01-06T10:20:00-08:00</updated><entry><title>Neural Networks Part 4:</title><link href="http://blog.3strandcode.com/neural-networks-part-4.html" rel="alternate"></link><updated>2016-01-06T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2016-01-06:neural-networks-part-4.html</id><summary type="html">&lt;p&gt;This session we didn't add much new behavior, but tied things nicely together in a &lt;code&gt;Trainer&lt;/code&gt; class and added 
+nicer output to track the current error.&lt;/p&gt;
+&lt;p&gt;Here's an example usage of the new class:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;OR_GATE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="c"&gt;# (input, output)&lt;/span&gt;
+    &lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt;
+    &lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt;
+    &lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt;
+    &lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Network&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="n"&gt;trainer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Trainer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;OR_GATE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;trainer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;train&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;When run this outputs:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;python neural_network_with_connections.py
+Epoch  &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.0976866206323
+Epoch  &lt;span class="m"&gt;1000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.0175155899397
+Epoch  &lt;span class="m"&gt;2000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.00643827724377
+Epoch  &lt;span class="m"&gt;3000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.00322907067653
+Epoch  &lt;span class="m"&gt;4000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.00191442445754
+Epoch  &lt;span class="m"&gt;5000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.00125869287738
+Epoch  &lt;span class="m"&gt;6000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.000887481325948
+Epoch  &lt;span class="m"&gt;7000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.000657994207371
+Epoch  &lt;span class="m"&gt;8000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.000506639806887
+Epoch  &lt;span class="m"&gt;9000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.000401750116057
+Epoch  &lt;span class="m"&gt;10000&lt;/span&gt; &lt;span class="nv"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 0.000326163968267
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Notice as we train the &lt;code&gt;error&lt;/code&gt; gets lower and lower, our neural network is learning!&lt;/p&gt;
+&lt;p&gt;Such cool stuff, come checkout the &lt;a href="http://www.meetup.com/dev-coop/"&gt;Dev Coop meet up&lt;/a&gt; in Liberty Lake, WA!&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry><entry><title>Presenting at Shaw Middle School</title><link href="http://blog.3strandcode.com/presenting-at-shaw-middle-school.html" rel="alternate"></link><updated>2016-01-01T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2016-01-01:presenting-at-shaw-middle-school.html</id><summary type="html">&lt;p&gt;&lt;img alt="On Track Academy" src="/images/events/ontrack_academy_2.jpg" /&gt; We get the opportunity to talk to students in our community every so often, this time we're talking to a group of students
+in the &lt;a href="http://www.spokaneschools.org/ontrack"&gt;On Track Academy&lt;/a&gt; at &lt;a href="http://www.spokaneschools.org/Domain/1179"&gt;Shaw Middle School&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They were a great group of enthusiastic students... in fact, one bright student is already doing animation and experimenting 
+with making her own webpages! They asked lots of questions, got excited, and applied for the program. Can't wait to see
+where we are a year from now!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="On Track Academy" src="/images/events/ontrack_academy_1.jpg" /&gt;
+&lt;img alt="On Track Academy" src="/images/events/ontrack_academy_3.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href="https://www.linkedin.com/in/williamtualaufale"&gt;Tualau Fale&lt;/a&gt; for inviting us! He's a great guy and we hope to
+hang out again soon!&lt;/p&gt;</summary><category term="presenting"></category><category term="community"></category><category term="coding"></category></entry><entry><title>Neural Networks Part 3: Training</title><link href="http://blog.3strandcode.com/neural-networks-part-3-training.html" rel="alternate"></link><updated>2015-12-24T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-12-24:neural-networks-part-3-training.html</id><summary type="html">&lt;p&gt;We took our neurons where previously we had calculated their values and weights, this week
+we added errors and real training!&lt;/p&gt;
+&lt;p&gt;We finally got an actual neural network trained to output '1' when input '2'! I know that doesn't
+sound very cool, but building it from scratch with great friends was super awesome.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Neuron graph" src="/images/events/neuron_pt3_remote.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Thanks for attending guys, have a great Christmas/New Years!&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry><entry><title>Presenting at K-Tec</title><link href="http://blog.3strandcode.com/presenting-at-k-tec.html" rel="alternate"></link><updated>2015-12-18T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-12-18:presenting-at-k-tec.html</id><summary type="html">&lt;p&gt;&lt;img alt="KTec" src="/images/events/ktec.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;A few weeks ago we went to &lt;a href="http://ktectraining.org/"&gt;ktec&lt;/a&gt;, an awesome technical school in Rathdrum, Idaho. We did a
 little presentation about our lives (far from perfect), how we got here (successful developers), and what we're doing to help others
 achieve the same ends (&lt;a href="http://3strandcode.com"&gt;3 Strand Code!&lt;/a&gt;).&lt;/p&gt;
@@ -36,9 +83,7 @@ including tests an award winning readme! :)&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Lookin' good boys!" src="/images/events/neuron_pt2_lookin_good_boys.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Lookin good boys! &lt;/p&gt;
 &lt;h3&gt;What's next&lt;/h3&gt;
-&lt;p&gt;We'll enable our networks to be trained to output desired values based on some input.&lt;/p&gt;
-&lt;p&gt;Here's a link to &lt;a href="neural-networks-part-1-the-neuron.html"&gt;part 1 in this series&lt;/a&gt;&lt;/p&gt;
-&lt;!--And here's a link to the [next part in the series](asdf)--&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry><entry><title>Neural Networks Part 1: The Neuron</title><link href="http://blog.3strandcode.com/neural-networks-part-1-the-neuron.html" rel="alternate"></link><updated>2015-11-20T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-11-20:neural-networks-part-1-the-neuron.html</id><summary type="html">&lt;p&gt;Last month we did the first part of a many part series about creating Neural Networks
+&lt;p&gt;We'll enable our networks to be trained to output desired values based on some input.&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry><entry><title>Neural Networks Part 1: The Neuron</title><link href="http://blog.3strandcode.com/neural-networks-part-1-the-neuron.html" rel="alternate"></link><updated>2015-11-20T10:20:00-08:00</updated><author><name>Eric Carmichael</name></author><id>tag:blog.3strandcode.com,2015-11-20:neural-networks-part-1-the-neuron.html</id><summary type="html">&lt;p&gt;Last month we did the first part of a many part series about creating Neural Networks
 from the ground up.  See it on &lt;a href="https://github.com/dev-coop/neural-net-hacking-examples"&gt;GitHub&lt;/a&gt;.
 I'll briefly cover some of what Levi went over but I won't do it justice! 
 You'll have to come to the meet-ups to get the full effect.&lt;/p&gt;
@@ -119,5 +164,4 @@ code does what it's supposed to by asserting exactly how it should behave.&lt;/p
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;If the above test passes, we can be sure our connection was made properly!&lt;/p&gt;
-&lt;p&gt;Here's a link to &lt;a href="neural-networks-part-2-the-network.html"&gt;part 2 in this series&lt;/a&gt;&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry></feed>
+&lt;p&gt;If the above test passes, we can be sure our connection was made properly!&lt;/p&gt;</summary><category term="neural networks"></category><category term="machine learning"></category><category term="coding"></category></entry></feed>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>3 Strand Code Blog - Tags</title>
+    <title>3 Strand Code Blog</title>
     <link rel="stylesheet" type="text/css" href="http://blog.3strandcode.com/theme/css/screen.min.css">
     <link rel="stylesheet" type="text/css" href="http://blog.3strandcode.com/theme/css/highlight.min.css">
     <link rel="stylesheet" type="text/css" href="http://blog.3strandcode.com/theme/css/extra.css">
@@ -107,7 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .main-header.post-head {
 
 
-                background-image: url("https://images.unsplash.com/20/bw-room.JPG?fit=crop&fm=jpg&h=925&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1300") !important;
+                background-image: url("https://images.unsplash.com/38/IbJK5etSN6dH6jAF4U0U_DSC_0280-1.jpg?fit=crop&fm=jpg&h=925&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1300") !important;
             background-color: #6ea6be;
             background-blend-mode: soft-light;
         }
@@ -137,11 +137,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="hidden">Scroll Down</span>
             </a>
         </header>
-    <h1>Tags for 3 Strand Code Blog</h1>        <li><a href="http://blog.3strandcode.com/tag/coding.html">coding</a> (6)</li>
-        <li><a href="http://blog.3strandcode.com/tag/community.html">community</a> (2)</li>
-        <li><a href="http://blog.3strandcode.com/tag/machine-learning.html">machine learning</a> (4)</li>
-        <li><a href="http://blog.3strandcode.com/tag/neural-networks.html">neural networks</a> (4)</li>
-        <li><a href="http://blog.3strandcode.com/tag/presenting.html">presenting</a> (2)</li>
+<main id="content" class="content" role="main">
+    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <header class="post-header">
+            <h1 class="post-title" itemprop="headline">Neural Networks Part 4:</h1>
+            <section class="post-meta">
+                <span class="entry-author" itemscope="" itemtype="http://schema.org/Person" itemprop="author">
+                    <span itemprop="name">Eric Carmichael</span></span>
+                <time class="post-date" itemprop="datePublished" datetime="2016YYY-20M-%DD">Wednesday, January 06, 2016</time>
+
+            </section>
+        </header>
+        <section class="post-content">
+            <p>This session we didn't add much new behavior, but tied things nicely together in a <code>Trainer</code> class and added 
+nicer output to track the current error.</p>
+<p>Here's an example usage of the new class:</p>
+<div class="highlight"><pre><span class="n">OR_GATE</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="c"># (input, output)</span>
+    <span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+    <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+    <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+    <span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+<span class="p">)</span>
+
+<span class="n">network</span> <span class="o">=</span> <span class="n">Network</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">trainer</span> <span class="o">=</span> <span class="n">Trainer</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="n">OR_GATE</span><span class="p">)</span>
+<span class="n">trainer</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</pre></div>
+
+
+<p>When run this outputs:</p>
+<div class="highlight"><pre><span class="nv">$ </span>python neural_network_with_connections.py
+Epoch  <span class="m">0</span> <span class="nv">error</span> <span class="o">=</span> 0.0976866206323
+Epoch  <span class="m">1000</span> <span class="nv">error</span> <span class="o">=</span> 0.0175155899397
+Epoch  <span class="m">2000</span> <span class="nv">error</span> <span class="o">=</span> 0.00643827724377
+Epoch  <span class="m">3000</span> <span class="nv">error</span> <span class="o">=</span> 0.00322907067653
+Epoch  <span class="m">4000</span> <span class="nv">error</span> <span class="o">=</span> 0.00191442445754
+Epoch  <span class="m">5000</span> <span class="nv">error</span> <span class="o">=</span> 0.00125869287738
+Epoch  <span class="m">6000</span> <span class="nv">error</span> <span class="o">=</span> 0.000887481325948
+Epoch  <span class="m">7000</span> <span class="nv">error</span> <span class="o">=</span> 0.000657994207371
+Epoch  <span class="m">8000</span> <span class="nv">error</span> <span class="o">=</span> 0.000506639806887
+Epoch  <span class="m">9000</span> <span class="nv">error</span> <span class="o">=</span> 0.000401750116057
+Epoch  <span class="m">10000</span> <span class="nv">error</span> <span class="o">=</span> 0.000326163968267
+</pre></div>
+
+
+<p>Notice as we train the <code>error</code> gets lower and lower, our neural network is learning!</p>
+<p>Such cool stuff, come checkout the <a href="http://www.meetup.com/dev-coop/">Dev Coop meet up</a> in Liberty Lake, WA!</p>
+
+            <br/>
+<nav class="pagination" role="navigation">
+    <ul>
+    </ul>
+</nav>            <br/>
+        </section>
+        <footer class="post-footer">
+<h2>Comments !</h2>
+<div id="disqus_thread"></div>
+<script type="text/javascript">var disqus_identifier = "neural-networks-part-4.html";(function(){var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;dsq.src = '//3strandcode.disqus.com/embed.js';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script>
+        </footer>
+    </article>
+</main>
         <footer class="site-footer clearfix" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
             <section class="copyright">
                 <a itemprop="url" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="tooltip" data-tooltip="CC BY-NC-SA" target="_blank">
