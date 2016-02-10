@@ -104,5 +104,3 @@ def test_connection_adds_to_incoming_and_outgoing_arrays(self):
 
 If the above test passes, we can be sure our connection was made properly!
 
-
-Here's a link to [part 2 in this series](neural-networks-part-2-the-network.html)

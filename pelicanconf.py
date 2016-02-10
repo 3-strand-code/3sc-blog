@@ -7,7 +7,7 @@ import os
 
 AUTHOR = u'3 Strand Code'
 SITENAME = u'3 Strand Code Blog'
-SITEURL = "http://127.0.0.1:8000"
+SITEURL = "http://127.0.0.1:8080"
 #SITEURL = os.environ.get("PELICAN_SITEURL")
 #assert SITEURL, "Missing PELICAN_SITEURL environment variable (URL path before static files)"
 

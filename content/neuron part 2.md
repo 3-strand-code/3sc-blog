@@ -3,7 +3,7 @@ Date: 2015-12-16 10:20
 Category: machine learning
 Tags: neural networks, machine learning, coding
 Authors: Eric Carmichael
-Summary: Every month we participate in the [Developer Co-op](http://meetup.com/dev-coop/) meetup in Liberty Lake, Washington. This month we had part 2 of learning neural networks. We talked projects, ate pizza, and had a great time!
+Summary: This month we had part 2 of learning neural networks at the [Developer Co-op](http://meetup.com/dev-coop/) meetup in Liberty Lake, Washington. We talked projects, ate pizza, and had a great time!
 
 
 Every month we participate in the [Developer Co-op](http://meetup.com/dev-coop/) meetup in Liberty Lake, Washington. This month we
@@ -27,7 +27,3 @@ Lookin good boys!
 ### What's next
 
 We'll enable our networks to be trained to output desired values based on some input.
-
-Here's a link to [part 1 in this series](neural-networks-part-1-the-neuron.html)
-
-<!--And here's a link to the [next part in the series](asdf)-->

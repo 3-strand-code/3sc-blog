@@ -4,7 +4,6 @@ Category: community
 Tags: presenting, community, coding
 Authors: Eric Carmichael
 Summary: ![On Track Academy](/images/events/ontrack_academy_2.jpg) We get the opportunity to talk to students in our community every so often, this time we're talking to a group of students in the [On Track Academy](http://www.spokaneschools.org/ontrack) at [Shaw Middle School](http://www.spokaneschools.org/Domain/1179).
-Status: draft
 
 
 ![On Track Academy](/images/events/ontrack_academy_2.jpg) We get the opportunity to talk to students in our community every so often, this time we're talking to a group of students
